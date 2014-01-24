@@ -1,17 +1,17 @@
 gwastrap
 ========
 
-== JavaScript
+## JavaScript
 
-=== Namespacing
+### Namespacing
 
-=== Classes
+### Classes
 
 Each class should be in its own file.
 
 For production, class files should be minified and concatenated.
 
-==== Standard class
+#### Standard class
 
 ```js
 window.gwa = window.gwa || {};
@@ -64,7 +64,7 @@ window.gwa = window.gwa || {};
 }(window.gwa = window.gwa || {}, typeof(jQuery)=='function' ? jQuery : null));
 ```
 
-==== Singelton pattern
+#### Singelton pattern
 
 ```js
 window.gwa = window.gwa || {};
