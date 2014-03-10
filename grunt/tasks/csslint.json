@@ -1,0 +1,10 @@
+{
+  "options": {
+    "csslintrc": ".csslintrc"
+  },
+	"src": [
+    "src/assets/css/boxsizing.css",
+    "src/assets/css/grid.css",
+    "src/assets/css/fonts.css"
+  ]
+}
