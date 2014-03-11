@@ -1,0 +1,10 @@
+{
+	"options": {
+		"relaxerror": [
+			"Bad value X-UA-Compatible for attribute http-equiv on element meta."
+		]
+	},
+	"files": {
+		"src": "src/*.html"
+	}
+}
