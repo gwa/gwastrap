@@ -22,7 +22,7 @@ module.exports = function(grunt) {
 	grunt.registerTask(
 		'default',
 		[
-			'jsrc',
+			'jscs',
 			'csslint:src',
 			'jshint:src',
 			'validation',
