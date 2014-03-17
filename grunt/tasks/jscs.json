@@ -1,6 +1,6 @@
 {
   "src": "src/assets/*.js",
   "options": {
-  	"config": ".jscsrc"
+    "config": ".jscsrc"
   }
 }
