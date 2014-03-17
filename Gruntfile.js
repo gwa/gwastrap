@@ -6,6 +6,7 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 
 		// tasks
+		jscs: grunt.file.readJSON('./grunt/tasks/jscs.json'),
 		uglify: grunt.file.readJSON('./grunt/tasks/uglify.json'),
 		jshint: grunt.file.readJSON('./grunt/tasks/jshint.json'),
 		csslint: grunt.file.readJSON('./grunt/tasks/csslint.json'),
@@ -16,13 +17,15 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-csslint');
 	grunt.loadNpmTasks('grunt-html-validation');
+	grunt.loadNpmTasks('grunt-jscs-checker');
 
 	grunt.registerTask(
 		'default',
 		[
+			'jsrc',
 			'csslint:src',
 			'jshint:src',
-			'validation:src',
+			'validation',
 			'uglify'
 		]
 	);

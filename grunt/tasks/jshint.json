@@ -1,4 +1,7 @@
 {
+  "options": {
+  	"jshintrc": true
+  },
   "src": [
     "src/assets/js"
   ]
