@@ -10,7 +10,8 @@ module.exports = function(grunt) {
 		uglify: grunt.file.readJSON('./grunt/tasks/uglify.json'),
 		jshint: grunt.file.readJSON('./grunt/tasks/jshint.json'),
 		csslint: grunt.file.readJSON('./grunt/tasks/csslint.json'),
-		validation: grunt.file.readJSON('./grunt/tasks/validation.json')
+		validation: grunt.file.readJSON('./grunt/tasks/validation.json'),
+		modernizr: grunt.file.readJSON('./grunt/tasks/modernizr.json')
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -18,6 +19,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-csslint');
 	grunt.loadNpmTasks('grunt-html-validation');
 	grunt.loadNpmTasks('grunt-jscs-checker');
+	grunt.loadNpmTasks('grunt-modernizr');
 
 	grunt.registerTask(
 		'default',
@@ -26,7 +28,8 @@ module.exports = function(grunt) {
 			'csslint:src',
 			'jshint:src',
 			'validation',
-			'uglify'
+			'uglify',
+			'modernizr'
 		]
 	);
 

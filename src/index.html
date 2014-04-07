@@ -21,7 +21,7 @@
 		distcss%% -->
 
 		<!-- %%devcss -->
-		<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+		<link rel="stylesheet" href="../bower_components/normalize-css/normalize.css">
 
 		<link rel="stylesheet" href="assets/css/boxsizing.css">
 		<link rel="stylesheet" href="assets/css/fonts.css">
@@ -40,12 +40,18 @@
 	</head>
 	<body>
 
+		<div id="wrapper">
+		</div>
+
 		<!-- %%distjs
 		<script type="text/javascript" src="assets/js/combined.min.js"></script>
 		distjs%% -->
 
 		<!-- %%devjs -->
-		<!-- add dev js files here -->
+		<script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js-dev/modernizr-dev.js"></script>
+		<script type="text/javascript" src="assets/js/gwa.App.js"></script>
+		<script type="text/javascript" src="assets/js/init.js"></script>
 		<!-- devjs%% -->
 
 	</body>

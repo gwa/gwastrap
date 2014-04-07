@@ -1,0 +1,43 @@
+{
+  "dist": {
+    "devFile" : "src/assets/js-dev/modernizr-dev.js",
+
+    "outputFile" : "dist/assets/js/modernizr-custom.js",
+
+    "extra" : {
+      "shiv" : false,
+      "printshiv" : false,
+      "load" : false,
+      "mq" : false,
+      "cssclasses" : true,
+      "prefixed" : "mdrz-"
+    },
+
+    "extensibility" : {
+      "addtest" : false,
+      "prefixed" : false,
+      "teststyles" : false,
+      "testprops" : false,
+      "testallprops" : false,
+      "hasevents" : false,
+      "prefixes" : false,
+      "domprefixes" : false
+    },
+
+    "uglify" : true,
+
+    "tests" : [
+      "opacity",
+      "rgba",
+      "svg",
+      "inlinesvg",
+      "touch"
+    ],
+
+    "parseFiles" : false,
+
+    "matchCommunityTests" : false,
+
+    "customTests" : []
+  }
+}

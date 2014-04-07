@@ -3,6 +3,6 @@
     "jshintrc": true
   },
   "src": [
-    "src/assets/js"
+    "src/assets/js/*.js"
   ]
 }
