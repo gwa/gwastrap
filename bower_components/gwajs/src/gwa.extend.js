@@ -1,6 +1,8 @@
+/* global gwa */
+
 window.gwa = window.gwa || {};
 
-gwa.extendDummy = function () {};
+gwa.extendDummy = function() {};
 
 /**
  * Provides class inheritance.
@@ -26,7 +28,6 @@ gwa.extendDummy = function () {};
  */
 gwa.extend = function( base, sub )
 {
-	var d = function () {};
 	gwa.extendDummy.prototype = base.prototype;
 	sub.prototype = new gwa.extendDummy();
 	sub.prototype.constructor = sub;
